@@ -141,7 +141,7 @@ html, body{
 .container.shopping-cart{
     width: 80%;
    
-   
+   min-height: 80%;
         padding: 2em;
     padding-top: 30px;
     
@@ -293,13 +293,18 @@ hr{
     
 footer.container {
     background-color: black;
-    width: 80%;
+   
+    width: 100%;
+    
+    
     color: white;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 100px;
     box-sizing: border-box;
     padding: 1.5rem;
+  
+   
 }
 footer .participants {
     margin-bottom: 1px;
