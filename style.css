@@ -75,6 +75,33 @@ html, body{
     margin:0px;
     padding: 0px;
 }
+.list-product .product-item .avatar .image
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.list-product .product-item .avatar .overlay
+{
+    position: absolute;
+    top: -10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ;
+    display: none;
+}
+.list-product .product-item div:hover.card .overlay{
+    opacity: 1;
+    display:block;
+}
+.list-product .product-item div:hover.avatar #image{
+  
+}
+
 .list-product .product-item .card-body{
     text-align: center;
     padding-top: 2px;
@@ -125,7 +152,7 @@ html, body{
 }
 
 .list-product .product-item div.card:hover{
-    background-color: yellow;
+   
 }
 
 
