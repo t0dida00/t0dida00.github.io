@@ -5,15 +5,16 @@ html, body{
     
 }
 .navbar {
-    width: 80%;
+   width: 70%;
     margin: auto;
     background-color: black !important ;
 
     z-index: 99;
 }
 .navbar .container {
-    width: 65%;
-    box-sizing: border-box;
+   
+  margin:0px;
+  width: fit-content;
 }
 .container.content{
     width: 70%;
@@ -228,7 +229,7 @@ html, body{
 hr{
     
     border-top:  2px solid;
-    width: 80%;
+    width: 70%;
     margin-top:2px;
     margin-bottom: 10px;
 }
@@ -337,4 +338,10 @@ footer .participants {
           
         }
     
+    }
+    @media (min-width: 1200px)
+    {
+        .container{
+        max-width: 70%;
+        }
     }
