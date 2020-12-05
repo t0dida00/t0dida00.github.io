@@ -9,6 +9,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/239c9be92d.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
     <link href="javascript.js">
     </script>
 
@@ -27,16 +28,16 @@
             <div class="collapse navbar-collapse " id="collapsibleNavId">
                 <ul class="navbar-nav ">
                     <li class="nav-item ">
-                        <a class="nav-link" href="detail.html"> <b>Smartphone</b> </a>
+                        <a class="nav-link" href="index.html"> <b>Smartphone</b> </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><b>SmartTV</b></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#"><b>About Us</b></a>
+                        <a class="nav-link" href="about.html"><b>About Us</b></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#"><b>Support</b></a>
+                        <a class="nav-link" href="support.html"><b>Support</b></a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -99,25 +100,25 @@
                 </div>
                 <div class="row box-filter" id="box-filter">
 
-                    <p><button style="border-style: none;" onclick="cancel()"><img src="images/delete.png"
+                    <p><button style="border-style: none;"  onclick="filterSelection('all');cancel()"><img src="images/delete.png"
                                 style="width: 30px; height: 30px;"></button></p>
                     <p class="header-filter">Filter:</p>
-                    <input type="radio" id="32gb" name="select" value="32">
+                    <input type="radio" id="32gb" name="select" value="32" onclick="filterSelection('16gb-32gb')">
                     <label for="32gb">16GB - 32GB</label><br>
-                    <input type="radio" id="128gb" name="select" value="128">
+                    <input type="radio" id="128gb" name="select" value="128" onclick="filterSelection('64gb-128gb')">
                     <label for="128gb">64GB - 128GB</label><br>
-                    <input type="radio" id="price" name="select" value="1000000">
+                    <input type="radio" id="price" name="select" value="1000000" onclick="filterSelection('1tr')">
                     <label for="price">1.000.000d-3.000.000d</label><br>
-                    <input type="radio" id="price1" name="select" value="1000000">
+                    <input type="radio" id="price1" name="select" value="1000000" onclick="filterSelection('3tr')">
                     <label for="price1">Above 3.000.000d</label>
 
                 </div>
             </div>
             <div class="col-lg-10 list-item col-xm-12">
                 <div class="row item">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item filterDiv 16gb-32gb">
 
-                        <a href="index2.html" style="color:black; text-decoration: none;">
+                        <a href="detail.html" style="color:black; text-decoration: none;">
                             <div class="card">
                                 <div class="avatar">
                                 <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
@@ -142,9 +143,9 @@
 
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item filterDiv 16gb-32gb">
 
-                        <a href="index2.html" style="color:black; text-decoration: none;">
+                        <a href="detail.html" style="color:black; text-decoration: none;">
                             <div class="card">
                                 <div class="avatar">
                                     <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
@@ -166,94 +167,8 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
-                            <div class="card">
-                                <div class="avatar">
-                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
-                                    <div class="overlay">
-                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
-                                      </div>
-                                    </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Phone's name</h4>
-                                    <p class="card-text">RAM 8GB
-                                        <span>/</span>
-                                        ROM 64GB
-                                    </p>
-                                    <p class="card-price">8.490.000d
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
-                            <div class="card">
-                                <div class="avatar">
-                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
-                                    <div class="overlay">
-                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
-                                      </div>
-                                    </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Phone's name</h4>
-                                    <p class="card-text">RAM 8GB
-                                        <span>/</span>
-                                        ROM 64GB
-                                    </p>
-                                    <p class="card-price">8.490.000d
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
-                            <div class="card">
-                                <div class="avatar">
-                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
-                                    <div class="overlay">
-                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
-                                      </div>
-                                    </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Phone's name</h4>
-                                    <p class="card-text">RAM 8GB
-                                        <span>/</span>
-                                        ROM 64GB
-                                    </p>
-                                    <p class="card-price">8.490.000d
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
-                            <div class="card">
-                                <div class="avatar">
-                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
-                                    <div class="overlay">
-                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
-                                      </div>
-                                    </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Phone's name</h4>
-                                    <p class="card-text">RAM 8GB
-                                        <span>/</span>
-                                        ROM 64GB
-                                    </p>
-                                    <p class="card-price">8.490.000d
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item filterDiv 16gb-32gb">
+                        <a href="#" style="color:black; text-decoration: none;">
                             <div class="card">
                                 <div class="avatar">
                                     <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
@@ -275,9 +190,116 @@
                     </div>
 
 
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item filterDiv 64gb-128gb">
+                        <a href="#" style="color:black; text-decoration: none;">
+                            <div class="card ">
+                                <div class="avatar">
+                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
+                                    <div class="overlay">
+                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
+                                      </div>
+                                    </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Phone's name</h4>
+                                    <p class="card-text">RAM 8GB
+                                        <span>/</span>
+                                        ROM 64GB
+                                    </p>
+                                    <p class="card-price">8.490.000d
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item filterDiv 64gb-128gb">
+                        <a href="#" style="color:black; text-decoration: none;">
+                            <div class="card ">
+                                <div class="avatar">
+                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
+                                    <div class="overlay">
+                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
+                                      </div>
+                                    </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Phone's name</h4>
+                                    <p class="card-text">RAM 8GB
+                                        <span>/</span>
+                                        ROM 64GB
+                                    </p>
+                                    <p class="card-price">8.490.000d
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item filterDiv 64gb-128gb">
+                        <a href="#" style="color:black; text-decoration: none;">
+                            <div class="card">
+                                <div class="avatar">
+                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
+                                    <div class="overlay">
+                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
+                                      </div>
+                                    </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Phone's name</h4>
+                                    <p class="card-text">RAM 8GB
+                                        <span>/</span>
+                                        ROM 64GB
+                                    </p>
+                                    <p class="card-price">8.490.000d
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
+                        <a href="#" style="color:black; text-decoration: none;">
+                            <div class="card">
+                                <div class="avatar">
+                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
+                                    <div class="overlay">
+                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
+                                      </div>
+                                    </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Phone's name</h4>
+                                    <p class="card-text">RAM 8GB
+                                        <span>/</span>
+                                        ROM 64GB
+                                    </p>
+                                    <p class="card-price">8.490.000d
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
 
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
+                        <a href="#" style="color:black; text-decoration: none;">
+                            <div class="card 64gb-128gb">
+                                <div class="avatar">
+                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
+                                    <div class="overlay">
+                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
+                                      </div>
+                                    </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Phone's name</h4>
+                                    <p class="card-text">RAM 8GB
+                                        <span>/</span>
+                                        ROM 64GB
+                                    </p>
+                                    <p class="card-price">8.490.000d
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
+                        <a href="#" style="color:black; text-decoration: none;">
                             <div class="card">
                                 <div class="avatar">
                                     <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
@@ -298,7 +320,7 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
+                        <a href="#" style="color:black; text-decoration: none;">
                             <div class="card">
                                 <div class="avatar">
                                     <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
@@ -319,7 +341,7 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
+                        <a href="#" style="color:black; text-decoration: none;">
                             <div class="card">
                                 <div class="avatar">
                                     <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
@@ -340,28 +362,7 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
-                            <div class="card">
-                                <div class="avatar">
-                                    <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
-                                    <div class="overlay">
-                                        <div class="text"> <img src="images/joy4.png" alt="Avatar" class="image"  ></div>
-                                      </div>
-                                    </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Phone's name</h4>
-                                    <p class="card-text">RAM 8GB
-                                        <span>/</span>
-                                        ROM 64GB
-                                    </p>
-                                    <p class="card-price">8.490.000d
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12 product-item">
-                        <a href="index2.html" style="color:black; text-decoration: none;">
+                        <a href="#" style="color:black; text-decoration: none;">
                             <div class="card">
                                 <div class="avatar">
                                     <img class="card-img-top" src="images/joy4.png" alt="" class="image" id="image">
