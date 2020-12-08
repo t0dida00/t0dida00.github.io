@@ -108,6 +108,7 @@ html, body{
 .list-product .product-item .card-title{
     font-size: 20px;
     margin-bottom: 0px;
+  
 }
 .list-product .product-item .card-text{
     font-size: 12px;
@@ -117,6 +118,7 @@ html, body{
     font-size: 20px;
     color:#d9001b;
     margin-bottom: 0px;
+    font-weight: bold;
 }
 .list-product .product-item .card-price-promotion .money{
    
@@ -272,7 +274,7 @@ hr{
     font-size: 30px ;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 6px;
 }
 .container.content .product-price{
