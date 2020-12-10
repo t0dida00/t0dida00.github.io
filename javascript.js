@@ -6,7 +6,7 @@ function cancel() {
     document.getElementById("box-filter").style.display = "none";
  
 }
-action = "javascript:void(0);"
+
 
 function up(max) {
     document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
