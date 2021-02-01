@@ -9,25 +9,25 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/239c9be92d.js" crossorigin="anonymous"></script>
-    
+
     <link href="style.css" rel="stylesheet">
-    <link href="javascript.js">
-    
-    
-    
+
+
+
+
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-md navbar-light  sticky-top justify-content-center">
-        <div class="container">
+  
+    <nav class="navbar navbar-expand-md navbar-light  sticky-top justify-content-between">
+        <div class="container" style="width: 100%;">
             <a class="navbar-brand" href="index.html"><img src="images/vsmart.PNG" style="height:50px"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="collapsibleNavId">
+            <div class="collapse navbar-collapse " id="collapsibleNavId" style="justify-content: space-between;">
                 <ul class="navbar-nav ">
                     <li class="nav-item ">
                         <a class="nav-link" href="index.html"> <b>Smartphone</b> </a>
@@ -51,6 +51,14 @@
                         </div>
                     </li>
                 </ul>
+                <div class="sp_cart">
+                   <a href="cart.html"><img src="./images/shopping_cart.png" style="z-index:99; background-color:  white; height: 42px;"> 
+                   
+                  
+                    <span class="badge_index" id="badge_index">0</span> 
+                </a> 
+                
+                </div>
 
             </div>
         </div>
@@ -62,105 +70,21 @@
                     <span>&nbsp;</span>
                     <span>
 
-                        <span class="badge">3</span>
+                        <span class="badge" id="badge">3</span>
 
                     </span>
                 </div>
-                <div class="col-6  shopping-cart-icon" >
-                  <a href="index.html"> <p class="float-right" style="border: 1px solid; background-color: darkgrey; text-decoration: none; color: black;">Continue shopping</p></a> 
+                <div class="col-6  shopping-cart-icon">
+                    <a href="index.html">
+                        <p class="float-right"
+                            style="border: 1px solid; background-color: darkgrey; text-decoration: none; color: black;">
+                            Continue shopping</p>
+                    </a>
                 </div>
             </div>
-            <div class="row shopping-cart_product">
-                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 image_product">
-                    <img src="images/aris_pro.jpg">
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 detail_product">
-                    <div class=" shopping-cart_product-title "> Vsmart Aris Pro 8GB-128GB</div>
-                    <div>&nbsp;</div>
-                    <div class="shopping-cart_product-price"><input type="text" id="moNey" value="8490000" readonly style="border:none;"></div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 quantity ">
+            <div class="list-product-shopping-cart">
 
-                    <div class="form-group">
-
-                        <div class="input-group">
-                            <div class="input-group-btn">
-                                <button id="down" class="btn btn-danger" onclick=" down('0')"
-                                    style="width: 40px; "> <img src="images/minus.png" style="width: 15px;"></i>
-                                </button>
-                            </div>
-                            <input type="text" id="myNumber" class="form-control input-number" value="1" size="4" readonly>
-                            <div class="input-group-btn">
-                                <button id="up" class="btn btn-success" onclick="up('10')" style="width: 40px; "><img src="images/plus.png" style="width: 15px;"></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-            <hr>
-            <div class="row shopping-cart_product">
-                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 image_product">
-                    <img src="images/bee 3 blue.png">
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 detail_product">
-                    <div class=" shopping-cart_product-title "> Vsmart Joy 2+ 2GB-32GB</div>
-                    <div>&nbsp;</div>
-                    <div class="shopping-cart_product-price" ><input type="text" id="moNey1" value="2490000" readonly style="border:none;"></div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 quantity ">
-
-                    <div class="form-group">
-
-                        <div class="input-group">
-                            <div class="input-group-btn">
-                                <button id="down" class="btn btn-danger" onclick=" down1('0')"
-                                    style="width: 40px; "> <img src="images/minus.png" style="width: 15px;"></i>
-                                </button>
-                            </div>
-                            <input type="text" id="myNumber1" class="form-control input-number" value="1" size="4" readonly>
-                            <div class="input-group-btn">
-                                <button id="up" class="btn btn-success" onclick="up1('10')" style="width: 40px; "><img src="images/plus.png" style="width: 15px;"></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-            <hr>
-            <div class="row shopping-cart_product">
-                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 image_product">
-                    <img src="images/live4.jpg">
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 detail_product">
-                    <div class=" shopping-cart_product-title "> Vsmart Live 4 6GB-64GB</div>
-                    <div>&nbsp;</div>
-                    <div class="shopping-cart_product-price"><input type="text" id="moNey2" value="4790000" readonly style="border:none;"></div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 quantity ">
-
-                    <div class="form-group">
-
-                        <div class="input-group">
-                            <div class="input-group-btn">
-                                <button id="down" class="btn btn-danger" onclick=" down2('0')"
-                                    style="width: 40px; "> <img src="images/minus.png" style="width: 15px;"></i>
-                                </button>
-                            </div>
-                            <input type="text" id="myNumber2" class="form-control input-number" value="1" size="4" readonly>
-                            <div class="input-group-btn">
-                                <button id="up" class="btn btn-success" onclick="up2('10')" style="width: 40px; "><img src="images/plus.png" style="width: 15px;"></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
+             
             </div>
             <hr class="full">
             <div class="row final_total">
@@ -168,13 +92,13 @@
                     Total
                 </div>
                 <div class="col-6 total" style="text-align:right">
-                  <span id="total">  8490000 </span>
-                  <span>&nbsp;</span>đ
+                    <span id="total"> 8490000 </span>
+                    <span>&nbsp;</span>đ
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 text-center mt-5"  >
-                   <a href="customer.html"> <button class="btn btn-danger" style="width: 200px;">Purchase</button></a>
+                <div class="col-12 text-center mt-5">
+                    <a href="customer.html"> <button class="btn btn-danger" style="width: 200px;">Purchase</button></a>
                 </div>
             </div>
         </div>
@@ -190,7 +114,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.5.1/js/bootstrap.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
@@ -198,9 +122,10 @@
     <script src="javascript.js">
 
     </script>
-    <script type="text/javascript" language="javascript">
-        $("#total").text(parseInt(document.getElementById("moNey").value) * document.getElementById("myNumber").value + parseInt(document.getElementById("moNey2").value) * document.getElementById("myNumber2").value + parseInt(document.getElementById("moNey1").value) * document.getElementById("myNumber1").value)
-    </script>
+
+    <script src="js2.js"></script>
+    <script src="js3.js"></script>
+
 
 </body>
 

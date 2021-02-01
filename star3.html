@@ -10,23 +10,23 @@
     <script src="https://kit.fontawesome.com/239c9be92d.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
     <link href="style2.css" rel="stylesheet">
-    
+
     <script src="javascript.js">
     </script>
 
 </head>
 
 <body>
-   
-    <nav class="navbar navbar-expand-md navbar-light  sticky-top justify-content-center">
-        <div class="container">
+
+    <nav class="navbar navbar-expand-md navbar-light  sticky-top justify-content-between">
+        <div class="container" style="width: 100%;">
             <a class="navbar-brand" href="index.html"><img src="images/vsmart.PNG" style="height:50px"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="collapsibleNavId">
+            <div class="collapse navbar-collapse " id="collapsibleNavId" style="justify-content: space-between;">
                 <ul class="navbar-nav ">
                     <li class="nav-item ">
                         <a class="nav-link" href="index.html"> <b>Smartphone</b> </a>
@@ -50,6 +50,14 @@
                         </div>
                     </li>
                 </ul>
+                <div class="sp_cart">
+                   <a href="cart.html"><img src="./images/shopping_cart.png" style="z-index:99; background-color:  white; height: 42px;"> 
+                   
+                  
+                    <span class="badge_index" id="badge_index">0</span> 
+                </a> 
+                
+                </div>
 
             </div>
         </div>
@@ -61,14 +69,7 @@
                     <p class="product-title">Vsmart Star3 2gb-16gb</p>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="product-price">1.990.000 đ
-
-
-                        <span>
-                            <a href="cart.html"><img src="images/shopping-cart.png"
-                                    style="height: 40px; width: 40px; float:right"></a></span>
-
-                    </h2>
+                    <h2 class="product-price">1990000 đ</h2>
                     
                 </div>
 
@@ -82,12 +83,12 @@
                         <div class="tab-pane" id="pic-2"><img src="images/star 3 red.png"></div>
                         <div class="tab-pane" id="pic-3"><img src="images/star3 đen.png"></div>
                     </div>
-                    <ul class="preview-thumbnail nav nav-tabs">
+                    <!-- <ul class="preview-thumbnail nav nav-tabs">
                         <li class="active"><a data-target="#pic-1" data-toggle="tab"><img
                                     src="images/star 3 blue.png"></a></li>
                         <li><a data-target="#pic-2" data-toggle="tab"><img src="images/star 3 red.png"></a></li>
                         <li><a data-target="#pic-3" data-toggle="tab"><img src="images/star3 đen.png"></a></li>
-                    </ul>
+                    </ul> -->
 
                 </div>
                 <div class="details col-md-6 ">
@@ -166,9 +167,14 @@
                         </div>
                     </div>
 
-                    <div class="action" style="text-align: center;">
-                        <a href="cart star3.html"><button class="add-to-cart btn btn-default" type="button">buy now</button></a>
-
+                    <div class="row">
+                    
+                        <div class="col-12"> <div class="action">
+                            <a href="#"><button class="add-to-cart btn btn-warning add-to-cart-button" type="button" style="width: 100%;">
+                                <img src="./images/shopping_cart.png" style="height: 25px;">
+                                add to cart</button></a>
+    
+                        </div></div>
                     </div>
 
                 </div>
@@ -195,7 +201,10 @@
 
 
     </script>
+    <script src="javascript.js"></script>
+    <script src="js2.js">
 
+    </script>
 
 </body>
 

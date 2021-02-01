@@ -172,6 +172,7 @@ html, body{
     
     
 }
+
 .container.shopping-cart .cart{
     width: 60%;
     margin: auto;
@@ -180,6 +181,9 @@ html, body{
 .shopping-cart_title{
     font-size: larger;
     font-weight:600;
+}
+.shopping-cart_product{
+    margin-bottom: 20px;
 }
 .shopping-cart_product-title
 {
@@ -198,6 +202,9 @@ html, body{
 .row.shopping-cart_product .detail_product{
 
  padding-right: 0px;
+}
+.row.shopping-cart_product .detail_product p{
+    margin:0;
 }
 .row.shopping-cart_product .detail_product .shopping-cart_product-price input{
    font-weight: bold;
@@ -224,7 +231,9 @@ html, body{
     font-size: 25px;
    
 }
-
+.quantity{
+    padding: 0;
+}
 .row.shopping-cart_product .quantity .form-group{
     width: 75%;
    margin: auto;
@@ -278,9 +287,11 @@ hr{
     font-size: 20px ;
     text-align: center;
 }
-
-.add-to-cart, .like {
+.red{
     background: rgb(235, 10, 10);
+}
+.add-to-cart {
+   
     padding: 1.2em 1.5em;
     width:300px;
     border: none;
@@ -336,8 +347,32 @@ footer .participants {
     margin-bottom: 1px;
 }
 
-
-
+.deactive{
+    display: none;
+  }
+.badge_index{
+    border: 1px solid; 
+    border-radius: 50%;
+    background-color: #57a5ff;
+    color: white;
+    position: relative;
+    top: -10px;
+    left:-20px;
+    
+    padding: .25em .4em;
+}
+.sp_cart a{
+    text-decoration-line: none !important;
+}
+.sp_cart{
+    position: relative;
+}
+.sp_cart a:hover .badge_index{
+    background-color: red !important;
+}
+.sp_cart a:hover img{
+    background-color: red !important;
+}
 @media only screen and (max-width: 1000px)
 {
     .navbar .container{
