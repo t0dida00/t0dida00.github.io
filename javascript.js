@@ -1,4 +1,6 @@
 
+//Product information is loaded by JS
+var countClicked=0
 const Mobiles = [
   {
     model: 'Vsmart Joy 3',
@@ -96,7 +98,7 @@ const Mobiles = [
 
 ]
 
-var countClicked=0
+
 
 
 function addProductsWInnerHTML() {
@@ -161,7 +163,7 @@ function prepareSingleProductHTMLString(model, imagePath, ram,rom,price,promotio
 
 
 
-
+//Update quantity of cart in index page before load page
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -169,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCart()
 
 });
+// Filter
 function filter() {
   document.getElementById("box-filter").style.display = "block";
 
@@ -220,9 +223,11 @@ function submit1() {
   document.getElementById("submit-button").style.display = "block";
 
 }
-
+// Remove Items after pressing purchase button
 function modal1() {
+  
   var length_localstorage = localStorage.length
+  // For loop to go through each Item
   for (let i = 0; i < length_localstorage; i++) {
     console.log(localStorage.key(i))
     if (localStorage.key(i) !== null) {

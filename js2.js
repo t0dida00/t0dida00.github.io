@@ -10,13 +10,9 @@ AddtoCart.onclick = function () {
         Quantity = 1;
     }
     else {
-
         Quantity = parseInt(JSON.parse(localStorage.getItem(NameProduct)).quantity) + 1
-
     }
     var obj = { name: NameProduct, price: PriceProduct, image: ImageProduct.outerHTML, quantity: Quantity }
-
-
     window.localStorage.setItem(NameProduct, JSON.stringify(obj))
 
     alert("Add to cart successfully !!!")

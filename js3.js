@@ -3,14 +3,25 @@ var CartItems = document.getElementsByClassName('shopping-cart_product');
 var InputClicked = document.getElementsByClassName("input-number");
 var InputPrice = document.getElementsByClassName("input_price");
 var InputTotalPrice = document.getElementsByClassName("total_price_product");
-
+var removeCartItemButtons = document.getElementsByClassName('remove');
 
 // Update before load page
 document.addEventListener("DOMContentLoaded", function () {
     UpdateCart()
-
 });
-
+//Show data from localstorage to Cart page
+for (let i = 0; i < localStorage.length; i++) {
+    addtoCart(ParseJSON(i))
+}
+// Parse JSON data from localstorage
+function ParseJSON(i) {
+    var key = localStorage.key(i)
+    var price = JSON.parse(localStorage.getItem(localStorage.key(i))).price
+    var image = JSON.parse(localStorage.getItem(localStorage.key(i))).image
+    var quantity = JSON.parse(localStorage.getItem(localStorage.key(i))).quantity
+    var array_information = [key, price, image, quantity]
+    return (array_information)
+}
 //Total 
 function UpdateCart() {
 
@@ -27,7 +38,6 @@ function UpdateCart() {
     document.getElementById("badge").innerHTML = total_quantity
     updateCart()
 }
-
 function updateCart() {
     var total_quantity_in_cart = 0
     for (let i = 0; i < localStorage.length; i++) {
@@ -36,12 +46,7 @@ function updateCart() {
     document.getElementById("badge_index").innerHTML = total_quantity_in_cart
 
 }
-
-
 //Button Remove
-
-var removeCartItemButtons = document.getElementsByClassName('remove');
-
 removeCartItemButtons.onclick = remove()
 function remove() {
     for (let i = 0; i < removeCartItemButtons.length; i++) {
@@ -63,16 +68,15 @@ function remove() {
         }
     }
 }
+//Show data from localstorage to Cart page
+function addtoCart(array_information) {
 
-for (let i = 0; i < localStorage.length; i++) {
+    var title = array_information[0]
+    var price = array_information[1]
+    var image = array_information[2]
+    var quantity = array_information[3]
 
-    addtoCart(localStorage.key(i),
-        JSON.parse(localStorage.getItem(localStorage.key(i))).price,
-        JSON.parse(localStorage.getItem(localStorage.key(i))).image,
-        JSON.parse(localStorage.getItem(localStorage.key(i))).quantity)
-}
 
-function addtoCart(title, price, image, quantity) {
 
     var cartRow = document.createElement('div')
     cartRow.classList.add("row", "shopping-cart_product")
